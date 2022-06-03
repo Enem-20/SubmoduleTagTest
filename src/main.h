@@ -1,5 +1,9 @@
 #pragma once
 
 class main {
-	void printWorks();
+	void virtual printWorks() const;
+};
+
+class SubMain : main{
+	void printWorks() const override;
 };
